@@ -1,0 +1,32 @@
+/* Glowgarden page: the canvas fills the window on a night-sky backdrop. */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #070912;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game {
+  display: block;
+  touch-action: none;
+  cursor: crosshair;
+  border-radius: 6px;
+  box-shadow: 0 0 60px rgba(122, 96, 200, 0.35);
+}
+
+/* Read aloud, never shown: the status line screen readers announce. */
+#status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
